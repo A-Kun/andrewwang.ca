@@ -1,0 +1,26 @@
+Variables
+
+	• Underscore in front of name means private
+
+	• Need to show type of all variables
+
+	• Include variables in the class where they can be found
+
+Methods
+
+	• Underscore in front of name means private
+
+	• Need to show type contract of all methods
+
+	• Include methods in the class where they can be found
+
+	• Include __init__, but (usually) not other system methods
+
+	• Don’t need to show all getter/setter methods for private variables
+
+Classes
+
+	• Need to show all classes that you will write (don’t showbuilt-in/imported)
+
+	• Show relationships (with name) + cardinality between classes
+		(Inheritance is an arrow from child to parent)

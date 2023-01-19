@@ -1,0 +1,32 @@
+body {
+  font-family: 'VT323', monospace;
+  font-size: larger;
+}
+
+.container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.box {
+  border-style: double;
+  border-width: 10px;
+  border-radius: 8px;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.columns::before {
+  content: "▶";
+  font-size: small;
+  color: white;
+}
+
+.columns:hover::before {
+  color: black;
+}
+
+a, a:hover, a:focus {
+  color: black;
+}

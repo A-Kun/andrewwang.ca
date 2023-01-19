@@ -1,0 +1,31 @@
+<script type="text/javascript">
+  function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min) ) + min;
+  }
+
+  function randChar() {
+    const charSpace = 'ABCDEFGHJKMNPQRTUVWXYZ2346789';
+    let result = '';
+    let randNum = getRndInteger(0, charSpace.length - 7);
+    for (let i = 0; i < 6; i++) {
+      result += charSpace.charAt(randNum);
+      randNum = getRndInteger(0, charSpace.length);
+    }
+    return result;
+  }
+
+  function randMath() {
+    let a = getRndInteger(100, 1000);
+    let b = getRndInteger(100, 1000);
+    while ((a === b) || (a + b < 1000)) {
+      a = getRndInteger(100, 1000);
+      b = getRndInteger(100, 1000);
+    }
+    const sum = a + b;
+    return `What is ${a} plus ${b}?</br>${sum}`;
+  }
+
+  document.write(randChar());
+  document.write('<br>');
+  document.write(randMath());
+</script>
